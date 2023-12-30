@@ -69,7 +69,7 @@ function Navbar() {
           <NavLink className={'link'} to="/about">About</NavLink>
           </li>
           <li>
-          <NavLink className={'link'} to="/product">Product</NavLink>
+          <NavLink className={'link'} to="/product">Product'S</NavLink>
           </li>
           <li>
           <NavLink className={'link'} to="/updates">Updates</NavLink>
