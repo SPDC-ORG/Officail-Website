@@ -9,7 +9,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-black p-4 pr-10 flex flex-col lg:flex-row lg:items-center lg:justify-between">
+    <nav className="bg-black p-4 pr-14 flex flex-col lg:flex-row lg:items-center lg:justify-between">
       <div className="flex items-center justify-between mb-4 lg:mb-0"> 
         <div className="flex items-center">
           <NavLink to="/"><img
