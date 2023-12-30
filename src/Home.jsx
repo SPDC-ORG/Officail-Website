@@ -1,8 +1,9 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Home() {
   return (
-    <div className="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center py-12">
+    <div className="bg-white p-10 text-black min-h-screen flex flex-col items-center justify-center py-12">
       <h1 className="text-5xl font-bold mb-6 text-center">
         Welcome to Space Power Developer Community
       </h1>
@@ -30,9 +31,11 @@ function Home() {
           <p className="text-gray-400 text-center mb-6">
             Be part of our community to innovate and create the future.
           </p>
+          <NavLink to="/Opportunities">
           <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded focus:outline-none focus:shadow-outline">
             Explore Opportunities
           </button>
+          </NavLink>
         </div>
       </div>
 
