@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import './Navbar.css'
+import { NavLink } from 'react-router-dom';
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -8,7 +9,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-black p-4 ml-10 flex mr-20 flex-col lg:flex-row lg:items-center lg:justify-between">
+    <nav className="bg-black p-4 flex flex-col lg:flex-row lg:items-center lg:justify-between">
       <div className="flex items-center justify-between mb-4 lg:mb-0"> 
         <div className="flex items-center">
           <img
@@ -18,7 +19,6 @@ function Navbar() {
           />
         </div>
 
-        {/* Mobile Menu Toggle Button */}
         <div className="block lg:hidden">
           <button
             onClick={toggleMenu}
@@ -63,16 +63,16 @@ function Navbar() {
       <div className={`lg:flex ${isOpen ? 'block' : 'hidden'}`}>
         <ul className="flex flex-col items-center lg:flex-row lg:items-center lg:justify-end space-y-2 lg:space-y-0 lg:space-x-10">
           <li>
-            <a href="#" className="text-white hover:text-gray-300">Home</a>
+            <NavLink className={'link'} to="/">Home</NavLink>
           </li>
           <li>
-            <a href="#" className="text-white hover:text-gray-300">About</a>
+          <NavLink className={'link'} to="/about">About</NavLink>
           </li>
           <li>
-            <a href="#" className="text-white hover:text-gray-300">Product</a>
+          <NavLink className={'link'} to="/product">Product</NavLink>
           </li>
           <li>
-            <a href="#" className="text-white hover:text-gray-300">Updates</a>
+          <NavLink className={'link'} to="/updates">Updates</NavLink>
           </li>
         </ul>
       </div>
